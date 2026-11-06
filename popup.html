@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 12px system-ui, sans-serif; width: 280px; margin: 10px; }
+    h1 { font-size: 13px; margin: 0 0 6px; }
+    p { margin: 0 0 6px; color: #666; font-size: 11px; }
+    #resumen { color: #222; font-size: 12px; font-weight: 600; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 11px; }
+    td { padding: 2px 4px; border-bottom: 1px solid #eee; }
+    td.n { text-align: right; width: 36px; }
+    textarea { width: 100%; box-sizing: border-box; height: 160px; font: inherit; }
+    .fila { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+    button { padding: 3px 12px; font: inherit; }
+    #estado { color: #2a7a2a; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h1>Menéame modo lectura</h1>
+  <p id="resumen"></p>
+  <table id="recuento"></table>
+  <p>Una palabra o frase por línea. Da igual mayúsculas y tildes.</p>
+  <textarea id="lista" spellcheck="false"></textarea>
+  <div class="fila">
+    <button id="guardar">Guardar</button>
+    <span id="estado"></span>
+  </div>
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

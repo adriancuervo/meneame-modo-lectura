@@ -1,0 +1,127 @@
+/* Noticias filtradas */
+.msr-oculta {
+  display: none !important;
+}
+
+/* Fuera: votos, carrusel, línea de usuario y barra inferior */
+.news-summary .news-shakeit,
+.slider-wrapper,
+.news-summary .news-submitted,
+.news-summary .news-details {
+  display: none !important;
+}
+
+.news-summary {
+  margin-bottom: 10px;
+}
+
+.news-body h2 {
+  margin-bottom: 6px;
+}
+
+/* Línea de datos bajo el título: fuente, fecha, sub */
+.msr-datos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  margin-bottom: 8px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #777;
+}
+
+.msr-datos a,
+.msr-datos a:hover {
+  text-decoration: none !important;
+}
+
+.msr-datos .msr-fuente {
+  color: #e35614;
+}
+
+/* Pastilla del sub: gris por defecto; las comunidades con color propio
+   lo traen en el propio enlace */
+.msr-datos a.subname {
+  background-color: #ccc;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  text-transform: lowercase;
+}
+
+/* Barra lateral: solo la caja de comunidades */
+#sidebar > :not(:has(.header a[href="/subs"])) {
+  display: none !important;
+}
+
+#sidebar .cell .votes,
+#sidebar .cell img,
+#sidebar .cell h5 > a:not(.subname),
+#sidebar .cell.msr-repetida {
+  display: none !important;
+}
+
+/* Comunidades: mismo estilo que el menú superior */
+#sidebar .sidebox .header {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: 1px solid #d7d7d7 !important;
+  border-radius: 0 !important;
+  padding: 0 0 9px 12px !important;
+}
+
+#sidebar .sidebox .header h4,
+#sidebar .sidebox .header h4 a {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: normal !important;
+  text-transform: uppercase !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  color: #101010 !important;
+}
+
+#sidebar .sidebox .body {
+  border: none !important;
+  background: none !important;
+  padding-top: 4px !important;
+}
+
+#sidebar .sidebox .cell {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 5px 0 5px 12px !important;
+}
+
+#sidebar .cell h5 {
+  margin: 0 !important;
+}
+
+#sidebar .cell a.subname {
+  display: block;
+  background: none !important;
+  padding: 0 !important;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #3c3c3c !important;
+  text-decoration: none !important;
+  text-transform: lowercase !important;
+}
+
+#sidebar .cell a.subname::first-letter {
+  text-transform: uppercase;
+}
+
+#sidebar .cell a.subname:hover {
+  color: #e35614 !important;
+}
